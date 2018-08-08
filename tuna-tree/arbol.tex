@@ -1,0 +1,27 @@
+\documentclass[tikz, border=3mm, preview]{standalone}
+
+\usepackage{tikz}
+\usepackage{graphdrawing.trees}
+
+\begin{document}
+
+\begin{tikzpicture}[nodes={draw, circle}, ->]
+	\node{r}
+    child { node {a} 
+        child { node {c} }
+        child { node {d} }
+        child { node {e} }
+    }
+    %[nodes={draw,rectangle}]
+    child [missing]
+    child [missing]
+    child {node {b} 
+        child { node {c} }
+        child { node {d} }
+        child { node {e} }
+    };
+
+
+\end{tikzpicture}
+
+\end{document}
