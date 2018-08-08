@@ -1,0 +1,4 @@
+*.aux
+*.log
+.nfs*
+*.pyc
